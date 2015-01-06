@@ -12,7 +12,7 @@
 module.exports = {
     "siteName": "Bitcot Technologies",
     "siteRoot": "http://bitcot.herokuapp.com",
-    "siteIP": "0.0.0.0",
+    "siteIP": "bitcot.herokuapp.com",
     "log_level": "info",
    "db": {
         "type":"mongo",
