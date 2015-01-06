@@ -38,7 +38,7 @@ pb.config = require('../config');
 
 //configure basic services
 //setup utils
-pb.utils = require(DOCUMENT_ROOT+'/include/util.js');
+pb.utils = require('util.js');
 global.log =
 pb.log     = require(DOCUMENT_ROOT+'/include/utils/logging.js').logger(winston, pb.config);
 pb.system  = require(path.join(DOCUMENT_ROOT, 'include/system/system.js'));
