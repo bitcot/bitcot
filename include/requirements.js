@@ -33,7 +33,7 @@ fs.existsSync = fs.existsSync || path.existsSync;
 global.pb = {};
 
 //load the configuration
-pb.config = require('../include/config');
+pb.config = require('./config');
 
 
 //configure basic services
