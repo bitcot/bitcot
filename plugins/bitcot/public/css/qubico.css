@@ -433,6 +433,12 @@ a:focus,
     transform:translateY(0);
 }
 
+/* Shubham Works */
+.project-thumb img
+{
+padding:5px;
+background:#ccc;
+}
 /*----------------------
 -----Header Styles------
 ------------------------*/
