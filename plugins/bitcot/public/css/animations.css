@@ -1,4 +1,4 @@
-/*
+                       /*
 ==============================================
 CSS3 ANIMATION CHEAT SHEET
 ==============================================
@@ -731,8 +731,8 @@ pulse
 	animation-name: pulse;
 	-webkit-animation-name: pulse;	
 
-	animation-duration: 1.5s;	
-	-webkit-animation-duration: 1.5s;
+	animation-duration: 4s;	
+	-webkit-animation-duration: 4s;
 
 	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
@@ -778,8 +778,8 @@ floating
 	animation-name: floating;
 	-webkit-animation-name: floating;
 
-	animation-duration: 1.5s;	
-	-webkit-animation-duration: 1.5s;
+	animation-duration: 4s;	
+	-webkit-animation-duration: 4s;
 
 	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
