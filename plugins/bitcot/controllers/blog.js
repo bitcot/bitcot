@@ -12,7 +12,7 @@ var TopMenu        = require(DOCUMENT_ROOT + '/include/theme/top_menu');
 var Media          = require(DOCUMENT_ROOT + '/include/theme/media');
 var Comments       = require(DOCUMENT_ROOT + '/include/theme/comments');
 var ArticleService = require(DOCUMENT_ROOT + '/include/service/entities/article_service').ArticleService;
-console.log(TopMenu);
+
 //inheritance
 util.inherits(Blog, pb.BaseController);
 
@@ -320,7 +320,6 @@ Blog.prototype.renderComments = function(content, ts, cb) {
             cb(null, '');
             return;
         }
-
         var tasks = pb.utils.getTasks(content.comments, function(comments, i) {
             return function(callback) {
                 self.renderComment(comments[i], callback);
