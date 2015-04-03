@@ -51,6 +51,23 @@ work.prototype.render = function(cb) {
                     });
                 });
             });
+            self.ts.registerLocal('angular', function(flag, cb) {
+
+                var loggedIn       = pb.security.isAuthenticated(self.session);
+                //var commentingUser = loggedIn ? Comments.getCommentingUser(self.session.authentication.user) : null;
+
+                var objects = {
+                    contentSettings: contentSettings,
+                    loggedIn: loggedIn,
+                    //commentingUser: commentingUser,
+                    themeSettings: data.nav.themeSettings,
+
+                    //sideNavItems: sideNavItems,
+                    trustHTML: 'function(string){return $sce.trustAsHtml(string);}'
+                };
+                var angularData = pb.js.getAngularController(objects, ['ngSanitize']);
+                cb(null, angularData);
+            });
 
             self.ts.load('work', function (err, result) {
 
