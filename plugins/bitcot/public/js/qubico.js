@@ -170,14 +170,8 @@ $(document).ready(function() {
 				}
 				
 				if($(this).parents('.project-item').is('.filtered')){return false;}
-				
-				$('html,body').scrollTo(0,'#preview-scroll',
-					{
-						gap:{y:-120},
-						animation:{
-							duration:500
-						}
-				});
+
+				$('html,body').scrollTo('#preview-scroll',800);
 				
 				if(elem.is('.active')){return false;}
 				
@@ -298,14 +292,8 @@ $(document).ready(function() {
 		}
 		
 		if($(this).parents('.project-item').is('.filtered')){return false;}
-		
-		$('html,body').scrollTo(0,'#preview-scroll',
-			{
-				gap:{y:-120},
-				animation:{
-				duration:500
-			}
-		});
+
+		$('html,body').scrollTo('#preview-scroll',800);
 		
 		if(elem.is('.active')){return false;}
 		
@@ -329,13 +317,7 @@ $(document).ready(function() {
 	$('#project-preview .close-preview').click(function(e){
 		e.preventDefault();
 
-		$('html,body').scrollTo(0,'.projects-container',
-				{
-					gap:{y:-120},
-					animation:{
-						duration:400
-					}
-			});
+		$('html,body').scrollTo('.projects-container',800);
 
 		closePreview();
 	})
